@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+     >
+
+    <!-- TEXT POST ROW -->
+    <!-- ============= -->
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" 
+        android:paddingLeft="10dp"
+        android:background="@drawable/black_comment_border_shape">
+
+        <TextView
+            android:id="@+id/msgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:text="alksdjaslkjdasdjasdjlkasljk" />
+    </LinearLayout>
+
+    <!-- IMAGE POST ROW -->
+    <!-- ============== -->
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/msgImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+            
+            <ImageView
+                android:id="@+id/playBtn" 
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:src="@drawable/video_icon"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
